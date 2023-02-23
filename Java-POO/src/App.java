@@ -19,10 +19,10 @@ class Cachorro {
     private String color;
     private int age;
     private String name;
-    private char sex;
-    private float weight;
-    private float thirstMeter;
-    private boolean hasVacine;
+    //private char sex;
+    //private float weight;
+    //private float thirstMeter;
+    //private boolean hasVacine;
 
     public Cachorro(String name){
         this.name = name;
@@ -30,6 +30,7 @@ class Cachorro {
         this.color = "Caramelo";
         this.size = 40f;
         this.age = 2;
+
     }
 
     public Cachorro(String name, String race, String color, float size, int birth){
