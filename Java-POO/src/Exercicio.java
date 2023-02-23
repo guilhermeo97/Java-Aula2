@@ -5,6 +5,7 @@ public class Exercicio {
         Dalila.description();
         Dalila.calculaIMCC(10.0f, 15.0f);
         lion.description();
+        Dalila.getName();
         System.out.println("Execução Terminada");
     }
 }
@@ -40,12 +41,12 @@ class Cachorro2 {
     }
 
     public void description(){
-        System.out.println("Esse é " + this.name + 
-        ", ele é um cachorro da raça " + this.race + 
-        "do sexo" + this.sex + 
-        " peso " + this.weight + "ele tem"+ this.age + "anos." +      
-        " altura de: " + this.size + 
-        " peso " + this.weight + " Vacinada = " + this.hasVacine);
+        System.out.println("Olá, eu sou " + this.name + 
+        ", sou um cão da raça " + this.race + ", " +
+        "sou " + this.sex + "." +
+        " peso " + this.weight + ", e tenho "+ this.age + " anos." +      
+        " Minha Altura é de: " + this.size + 
+        " Vacinada = " + this.hasVacine);
     }
 
     public void calculaIMCC(float size, float weight) {
@@ -62,9 +63,14 @@ class Cachorro2 {
                     System.out.println("Acima do peso");
                 }
                 else {
-                    System.out.println("Obeso");
+                    if(IMCC > 30){
+                        System.out.println("Obeso");   
+                    }
                 }
             } 
         }
+    }
+    public String getName(){
+        return this.name;
     }
 }
